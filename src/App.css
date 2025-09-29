@@ -1,38 +1,49 @@
+@font-face {
+	font-family: 'FuturaRound';
+	src: url('fonts/a_futuraround_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/a_futuraround_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/a_futuraround_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/a_futuraround_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/a_futuraround_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/a_futuraround_bold.svg#a_futuraround_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'RoundsBlack';
+	src: url('fonts/roundsblack.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/roundsblack.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/roundsblack.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/roundsblack.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/roundsblack.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/roundsblack.svg#roundsblack') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'ComicSans';
+	src: url('fonts/comic_sans_ms_gras.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/comic_sans_ms_gras.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/comic_sans_ms_gras.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/comic_sans_ms_gras.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/comic_sans_ms_gras.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/comic_sans_ms_gras.svg#comic_sans_ms_gras') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #edf2fa;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #FDFDFD;
 }

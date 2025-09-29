@@ -1,0 +1,93 @@
+.categories_container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.categoriesNav_container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoriesBookDecorDown {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #ccdbfd;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #525e75;
+    box-shadow: 0 0 2vh 1vh #525e75;
+}
+
+.categoriesBookDecorMiddle1 {
+    width: 25%;
+    height: 100%;
+    background-color: #edf2fa;
+    margin-left: -5vw;
+    border-radius: 0 2vh 2vh 0;
+    border: 1px solid #525e75;
+    z-index: 3;
+}
+.categoriesBookDecorMiddle2 {
+    width: 25%;
+    height: 100%;
+    background-color: #edf2fa;
+    margin-left: -5vw;
+    border-radius: 0 2vh 2vh 0;
+    border: 1px solid #525e75;
+}
+
+.categoriesBookDecorUp {
+    width: 70%;
+    height: 100%;
+    background-color: #d7e3fc;
+    border-radius: 0 2vh 2vh 0;
+    border: 1px solid #525e75;
+    z-index: 4;
+}
+
+.categoriesNav {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.categoriesUl {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0;
+    margin-left: -25vw;
+    z-index: 2;
+}
+
+.categoriesLink {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: 'RoundsBlack';
+    color: #FDFDFD;
+    text-decoration: none;
+    background-color: #abc4ff;
+    text-shadow: 0px 0px 2px #525e75;
+    margin-top: 3vh;
+    padding: 0.3vh 3vw 0.3vh 10vw;
+    border-radius: 0 4vh 4vh 0;
+    border: 1px solid #525e75;
+}

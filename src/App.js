@@ -1,22 +1,42 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import { Categories } from './components/Categories/Categories';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+import { Books } from './components/Books/Books';
+import { Book } from './components/Book/Book';
+import { Cart } from './components/Cart/Cart';
+import { OrderRegistration } from './components/OrderRegistration/OrderRegistration';
+import { CompleteOrder } from './components/CompleteOrder/CompleteOrder';
 
 function App() {
+  const [booksData, setBooksData] = useState(null);
+  const [orderData, setOrderData] = useState(null);
+  const [booksInCart, setBooksInCart] = useState(localStorage.getItem("booksInCart") ? JSON.parse(localStorage.getItem("booksInCart")) : []);
+
+  useEffect(()=>{
+    fetch('/books_data.json')
+      .then(response=>response.json())
+      .then(data=>setBooksData(data))
+      .catch((e)=>console.error(e))
+  }, [])
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <>
+        <Route path="/" element={<Categories booksData={booksData}/>}/>
+        <Route path="/:genre" element={<Books booksData={booksData} setBooksInCart={setBooksInCart}/>}/>
+        <Route path="/:genre/:id" element={<Book booksData={booksData} setBooksInCart={setBooksInCart}/>}/>
+        <Route path="/cart" element={<Cart booksData={booksData} setBooksInCart={setBooksInCart} booksInCart={booksInCart}/>}/>
+        <Route path="/order_registration" element={<OrderRegistration booksInCart={booksInCart} setOrderData={setOrderData}/>}/>
+        <Route path="/complete_order" element={<CompleteOrder orderData={orderData} booksInCart={booksInCart}/>}/>
+      </>
+    )
+  )
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <RouterProvider router={router}/>
       </header>
     </div>
   );
