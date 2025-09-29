@@ -39,7 +39,7 @@ export const OrderRegistration = ({ booksInCart, setOrderData }) => {
                         </div>
                     </div>
 
-                    <img src={book.src} className="orderImg"/>
+                    <img src={process.env.PUBLIC_URL + book.src} className="orderImg"/>
                 
                 </li>))}
             </ul>

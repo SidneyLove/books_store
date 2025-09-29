@@ -14,10 +14,13 @@ function App() {
   const [booksInCart, setBooksInCart] = useState(localStorage.getItem("booksInCart") ? JSON.parse(localStorage.getItem("booksInCart")) : []);
 
   useEffect(()=>{
-    fetch('/books_data.json')
-      .then(response=>response.json())
-      .then(data=>setBooksData(data))
-      .catch((e)=>console.error(e))
+    fetch(`${process.env.PUBLIC_URL}/books_data.json`)
+  .then(response => {
+    if (!response.ok) throw new Error(response.statusText);
+    return response.json();
+  })
+  .then(data => setBooksData(data))
+  .catch(e => console.error('Fetch error:', e));
   }, [])
 
   const router = createBrowserRouter(

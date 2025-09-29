@@ -118,7 +118,7 @@ export const Cart = ({ booksInCart, setBooksInCart }) => {
             </div>
 
             <div className="cartDelAndImg">
-              <img src={book.src} className="cartImg"/>
+              <img src={process.env.PUBLIC_URL + book.src} className="cartImg"/>
               <button 
               onClick={() => removeFromCart(book.id)}
               className="cartDelButton">

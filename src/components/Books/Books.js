@@ -43,7 +43,7 @@ const addToCart = (book) => {
                     return (
                         <div key={book.id} className='book'>
                             <Link to={`${book.id}`} className='bookLink'>
-                                <img src={book.src} className='bookImg'/>
+                                <img src={process.env.PUBLIC_URL + book.src} className='bookImg'/>
                                 <h2 className='bookTitle'>{book.title.length > 21? book.title.slice(0, 20) + "..." : book.title}</h2>
                                 <h3 className='bookPrice'>{book.price}₽</h3>
                             </Link>

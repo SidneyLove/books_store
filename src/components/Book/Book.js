@@ -39,7 +39,7 @@ export const Book = ({booksData, setBooksInCart}) => {
                 <GoBackButton/>
                 <CartIcon/>
                 <div className='bookDesc'>
-                    <img src={book.src} className='bookDescImg'/>
+                    <img src={process.env.PUBLIC_URL + book.src} className='bookDescImg'/>
                     <h1 className='bookDescTitle'>{book.title}</h1>
                     <p className='booksDescText'>{book.description}</p>
                     <p className='bookDescSubText'>Автор: {book.author}</p>
