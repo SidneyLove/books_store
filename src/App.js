@@ -24,17 +24,21 @@ function App() {
   }, [])
 
   const router = createBrowserRouter(
-    createRoutesFromElements(
-      <>
-        <Route path="/" element={<Categories booksData={booksData}/>}/>
-        <Route path="/:genre" element={<Books booksData={booksData} setBooksInCart={setBooksInCart}/>}/>
-        <Route path="/:genre/:id" element={<Book booksData={booksData} setBooksInCart={setBooksInCart}/>}/>
-        <Route path="/cart" element={<Cart booksData={booksData} setBooksInCart={setBooksInCart} booksInCart={booksInCart}/>}/>
-        <Route path="/order_registration" element={<OrderRegistration booksInCart={booksInCart} setOrderData={setOrderData}/>}/>
-        <Route path="/complete_order" element={<CompleteOrder orderData={orderData} booksInCart={booksInCart}/>}/>
-      </>
-    )
-  )
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<Categories booksData={booksData} />} />
+      <Route path="/:genre" element={<Books booksData={booksData} setBooksInCart={setBooksInCart} />} />
+      <Route path="/:genre/:id" element={<Book booksData={booksData} setBooksInCart={setBooksInCart} />} />
+      <Route path="/cart" element={<Cart booksData={booksData} setBooksInCart={setBooksInCart} booksInCart={booksInCart} />} />
+      <Route path="/order_registration" element={<OrderRegistration booksInCart={booksInCart} setOrderData={setOrderData} />} />
+      <Route path="/complete_order" element={<CompleteOrder orderData={orderData} booksInCart={booksInCart} />} />
+    </>
+  ),
+  {
+    basename: "/books_store",
+  }
+);
+
 
   return (
     <div className="App">

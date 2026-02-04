@@ -7,6 +7,12 @@ import { AnimatePresence, motion } from 'motion/react';
 export const Books = ({booksData, setBooksInCart}) => {
 const categorie = useParams();
 
+const genre = categorie.genre;
+const category = booksData?.categories?.[genre];
+if (!category) {
+  return null;
+}
+
 const addToCart = (book) => {
     setBooksInCart((prevCart) => {
       let updated;
@@ -37,8 +43,10 @@ const addToCart = (book) => {
             booksData && (<div className='books_container'>
                 <Header/>
                 
-                <h1 className='genreName'>{booksData.categories[categorie.genre].name.toUpperCase()}</h1>
-                <div className='books'>{booksData.categories[categorie.genre].books.map((book)=>{
+                <h1 className='genreName'>
+                  {category.name.toUpperCase()}
+                </h1>
+                <div className='books'>{category.books.map((book)=>{
                     return (
                         <div key={book.id} className='book'>
                             <Link to={`${book.id}`} className='bookLink'>
