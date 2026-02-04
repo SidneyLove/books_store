@@ -1,0 +1,189 @@
+.cart_container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.cart {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.cartHeader {
+    width: auto;
+    height: auto;
+    font-family: 'Akony';
+    font-size: calc(24px + 2vmin);
+    color: #525e75;
+    background-color: #fdfdfd;
+    /* text-shadow: 0px 0px 2px #525e75; */
+    margin: 10vh 0 3rem 0;
+    padding: 2vh 0.7rem 2vh 0.7rem;
+    border: 1px solid #525e75;
+    border-radius: 0 4vh 4vh 0;
+    /* box-shadow: 0 0 2vh 1vh rgba(82, 94, 117, 0.4); */
+}
+
+.cartText {
+    width: 90%;
+    height: auto;
+    font-family: 'BwSurcoBook';
+    font-size: calc(14px + 1vmin);
+    color: #525e75;
+    background-color: #fdfdfd;
+    /* text-shadow: 0px 0px 2px #525e75; */
+    list-style-type: none;
+    border-radius: 0 4vh 4vh 0;
+    border: 1px solid #525e75;
+    margin: 0;
+    padding: 1vh;
+}
+
+.cartUl {
+    width: 95%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.cartLi {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+    padding: calc(10px + 1vmin);
+}
+
+.cartBookInfo {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartTitleAndAuthor_container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.cartBookTitle {
+    width: 100%;
+    height: auto;
+    font-size: calc(12px + 2vmin);
+    margin: 0;
+}
+
+.cartBookAuthor {
+    width: 100%;
+    height: auto;
+    font-size: calc(9px + 1vmin);
+    margin: 0;
+}
+
+.cartPriceAndQuantity {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.cartPrice {
+    width: 100%;
+    height: calc(12px + 5vmin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 2vh 0;
+}
+
+.cartQuantity_contianer {
+    width: 100%;
+    height: calc(12px + 5vmin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartQuantityButton {
+    width: calc(12px + 5vmin);
+    height: calc(12px + 5vmin);
+    font-size: calc(14px + 1vmin);
+    font-family: 'BwSurcoBook';
+    background-color: rgba(204, 219, 253, 0.5);
+    border-radius: 4vh;
+    border: 1px solid #525e75;
+    margin: 0 1vh 0 1vh;
+    cursor: pointer;
+}
+
+.cartQuantity {
+    width: calc(24px + 5vmin);
+    height: calc(12px + 5vmin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1vh 0 1vh;
+    background-color: rgba(171, 196, 255, 0.5);
+    border-radius: 2rem;
+}
+
+.cartDelAndImg {
+    width: 20%;
+    height: auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.cartImg {
+    width: calc(12px + 18vmin);
+    border-radius: 0 4vh 0 0;
+}
+
+.cartDelButton {
+    width: calc(12px + 18vmin);
+    height: calc(12px + 5vmin);
+    border-radius: 0 0 4vh 0;
+    border: 1px solid #525e75;
+    background-color: rgba(254, 193, 193, 0.5);
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+.cartResult {
+    width: 50%;
+    height: calc(24px + 10vmin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(14px + 2vmin);
+    margin: 3rem 0 0 0;
+    /* box-shadow: 0 0 2vh 1vh #525e75; */
+}
+
+.cartRegistrationButton {
+    width: 95%;
+    height: calc(22px + 5vmin);
+    font-family: 'BwSurcoBook';
+    color: #525e75;
+    font-size: calc(14px + 1vmin);
+    background-color: rgba(204, 219, 253, 0.5);
+    border: 1px solid #525e75;
+    border-radius: 0 4vh 4vh 0;
+    margin: 3rem 0 3rem 0;
+    /* text-shadow: 0px 0px 2px #525e75; */
+    /* box-shadow: 0 0 2vh 1vh #525e75; */
+    cursor: pointer;
+}

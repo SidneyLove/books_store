@@ -1,0 +1,122 @@
+.categories_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    padding-top: 3rem;
+}
+
+.categoriesNav_container {
+    width: 100vw;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoriesBookDecorDown {
+    width: 15vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #ccdbfd;
+    border-radius: 0.5rem 1rem 1rem 0.5rem;
+    box-shadow: 0rem 0rem 3rem 0.5rem rgba(82, 94, 117, 0.4);
+}
+
+.categoriesBookDecorMiddle {
+    width: calc(1vw + 1rem);
+    height: 100%;
+    background-color: #edf2fa;
+    margin-left: -0.8rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    border: 1px solid #525e75;
+}
+.decorMiddleEl1 {
+    z-index: 9;
+}
+.decorMiddleEl2 {
+    z-index: 8;
+}
+.decorMiddleEl3 {
+    z-index: 7;
+}
+.decorMiddleEl4 {
+    z-index: 6;
+}
+.decorMiddleEl5 {
+    z-index: 5;
+}
+.decorMiddleEl6 {
+    z-index: 4;
+}
+.decorMiddleEl7 {
+    z-index: 3;
+}
+.decorMiddleEl8 {
+    z-index: 2;
+}
+
+.categoriesBookDecorUp {
+    width: calc(10vw + 7rem);
+    height: 100%;
+    background-color: #d7e3fc;
+    border-radius: 0.5rem 1rem 1rem 0.5rem;
+    border: 1px solid #525e75;
+    box-shadow: -1rem 0rem 3rem 0.5rem rgba(82, 94, 117, 0.4);
+    margin-left: -7rem;
+    z-index: 10;
+}
+
+.categoriesNav {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+}
+
+.categoriesUl {
+    width: 75vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    margin-left: -1vw;
+}
+
+.categoriesLi {
+    position: relative;
+    list-style-type: none;
+    margin: 1.5rem 0rem 0rem -5rem;
+    border-radius: 0 4vh 4vh 0;
+}
+
+.categoriesLink {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: 'BwSurcoMedium';
+    font-size: calc(12px + 2vmin);
+    position: relative;
+    color: #525e75;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: rgba(171, 196, 255, 0.5);
+    /* margin-top: 3vh; */
+    padding: 0.5rem 1rem 0.5rem 8rem;
+    border-radius: 0 4vh 4vh 0;
+    border: 1px solid #525e75;
+}

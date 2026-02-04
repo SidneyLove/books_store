@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'Akony';
+	src: url('fonts/Akony/AKONY.ttf');
+}
+
+@font-face {
+	font-family: 'BwSurcoMedium';
+	src: url('fonts/BwSurco/BwSurco-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'BwSurcoBook';
+	src: url('fonts/BwSurco/BwSurco-Book.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #fdfdfd;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0rem 0rem 1rem 1rem rgba(64, 64, 64, 0.535);
+  position: fixed;
+  top: 0;
+}

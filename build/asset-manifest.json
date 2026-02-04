@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/books_store/static/css/main.4f9b7b05.css",
+    "main.js": "/books_store/static/js/main.5a19fef1.js",
+    "static/js/453.6c8739fd.chunk.js": "/books_store/static/js/453.6c8739fd.chunk.js",
+    "static/media/comic_sans_ms_gras.svg": "/books_store/static/media/comic_sans_ms_gras.10d447bba0361c399a15.svg",
+    "static/media/roundsblack.svg": "/books_store/static/media/roundsblack.75212c5387af932a7b52.svg",
+    "static/media/comic_sans_ms_gras.eot": "/books_store/static/media/comic_sans_ms_gras.a525fca4958daf3d7215.eot",
+    "static/media/comic_sans_ms_gras.ttf": "/books_store/static/media/comic_sans_ms_gras.ac994dc2192d2b1e27ff.ttf",
+    "static/media/a_futuraround_bold.svg": "/books_store/static/media/a_futuraround_bold.1f2c5cee4c2af6c7db2d.svg",
+    "static/media/comic_sans_ms_gras.woff": "/books_store/static/media/comic_sans_ms_gras.e89ca9ca6658f83787f4.woff",
+    "static/media/comic_sans_ms_gras.woff2": "/books_store/static/media/comic_sans_ms_gras.004495204c850c624cc0.woff2",
+    "static/media/a_futuraround_bold.eot": "/books_store/static/media/a_futuraround_bold.36d2cb732dc63247dcca.eot",
+    "static/media/a_futuraround_bold.ttf": "/books_store/static/media/a_futuraround_bold.6c6f6f00eccea5e2ba41.ttf",
+    "static/media/roundsblack.eot": "/books_store/static/media/roundsblack.76b105924b46cd26bc1c.eot",
+    "static/media/roundsblack.ttf": "/books_store/static/media/roundsblack.8c999a1695f944364e79.ttf",
+    "static/media/a_futuraround_bold.woff": "/books_store/static/media/a_futuraround_bold.d610bbce6ecc9ad64f3e.woff",
+    "static/media/a_futuraround_bold.woff2": "/books_store/static/media/a_futuraround_bold.7acc12648e074eb18026.woff2",
+    "static/media/roundsblack.woff": "/books_store/static/media/roundsblack.3e7f23a7d4b593fbfdb9.woff",
+    "static/media/roundsblack.woff2": "/books_store/static/media/roundsblack.d059e55b4c7c1ef285c7.woff2",
+    "index.html": "/books_store/index.html",
+    "static/media/cart_icon.svg": "/books_store/static/media/cart_icon.0312147298b7f757bf0e67b674447789.svg",
+    "main.4f9b7b05.css.map": "/books_store/static/css/main.4f9b7b05.css.map",
+    "main.5a19fef1.js.map": "/books_store/static/js/main.5a19fef1.js.map",
+    "453.6c8739fd.chunk.js.map": "/books_store/static/js/453.6c8739fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f9b7b05.css",
+    "static/js/main.5a19fef1.js"
+  ]
+}

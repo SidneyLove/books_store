@@ -1,0 +1,161 @@
+.orderInfo_container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    font-family: 'BwSurcoBook';
+    padding-top: 5rem;
+}
+
+.orderUl {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.orderLi {
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: calc(14px + 1vmin);
+    color: #525e75;
+    background-color: #fdfdfd;
+    /* text-shadow: 0px 0px 2px #525e75; */
+    list-style-type: none;
+    border: 1px solid #525e75;
+    border-radius: 0 4vh 4vh 0;
+    margin: 2vh 0 0 0;
+    padding: calc(10px + 1vmin);
+}
+
+.orderBookInfo {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.orderTitleAndAuthor_container {
+    width: 100%;
+    height: auto;
+}
+
+.orderBookTitle {
+    font-size: calc(12px + 2vmin);
+    margin: 0;
+}
+
+.orderBookAuthor {
+    font-size: calc(9px + 1vmin);
+    margin: 0;
+}
+
+.orderPriceAndQuantity {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderPrice {
+    width: 50%;
+    height: calc(12px + 5vmin);
+    font-size: calc(14px + 2vmin);
+}
+
+.orderQuantity {
+    width: 50%;
+    height: calc(12px + 5vmin);
+    font-size: calc(14px + 2vmin);
+}
+
+.orderImg {
+    width: calc(12px + 15vmin);
+}
+
+.orderResult {
+    width: 50%;
+    height: calc(50px + 5vmin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(14px + 2vmin);
+    color: #525e75;
+    background-color: #fdfdfd;
+    border: 1px solid #525e75;
+    border-radius: 0 4vh 4vh 0;
+    margin: 4vh 0 0 0;
+    /* text-shadow: 0px 0px 2px #525e75; */
+    /* box-shadow: 0 0 2vh 1vh #525e75; */
+}
+
+.orderForm {
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    font-size: calc(14px + 1vmin);
+    font-family: 'BwSurcoBook';
+    color: #525e75;
+    background-color: #fdfdfd;
+    border: 1px solid #525e75;
+    border-radius: 0 4vh 4vh 0;
+    margin: 5vh 0 5vh 0;
+    padding-right: 2rem;
+    /* text-shadow: 0px 0px 2px #525e75; */
+}
+
+.orderLabel {
+    width: 100%;
+    text-align: center;
+    margin: 2vh 0 0 0;
+}
+
+.orderInput {
+    width: 100%;
+    height: calc(18px + 5vmin);
+    font-size: calc(14px + 1vmin);
+    font-family: 'BwSurcoBook';
+    color: #525e75;
+    text-align: center;
+    background-color: #fefefe;
+    border: 1px solid #525e75;
+    border-radius: 0 4vh 4vh 0;
+    text-shadow: 0px 0px 2px #FDFDFD;
+}
+
+.orderSubmit {
+    width: 50%;
+    height: calc(24px + 5vmin);
+    font-family: 'BwSurcoBook';
+    font-size: calc(18px + 1vmin);
+    color: #525e75;
+    background-color: rgba(204, 219, 253, 0.5);
+    border: 1px solid #525e75;
+    border-radius: 0 4vh 4vh 0;
+    margin: 7vh 0 7vh 0;
+    /* text-shadow: 0px 0px 2px #525e75; */
+    /* box-shadow: 0 0 2vh 1vh #525e75; */
+    cursor: pointer;
+}
+
+.orderError {
+    width: 100%;
+    font-size: calc(14px + 1vmin);
+    font-family: 'BwSurcoBook';
+    /* text-shadow: 0px 0px 2px #525e75; */
+    background-color: rgba(254, 193, 193, 0.8);
+    /* border-radius: 0 4vh 4vh 0; */
+    margin: 2vh 0 0 0;
+}

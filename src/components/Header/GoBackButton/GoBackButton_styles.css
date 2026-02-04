@@ -1,0 +1,14 @@
+.goBackButton {
+    width: calc(100px + 10vmin);
+    height: 6vh;
+    top: 1vh;
+    left: 0;
+    font-family: 'BwSurcoBook';
+    color: #525e75;
+    font-size: calc(14px + 2vmin);
+    background-color: rgba(171, 196, 255, 0.5);
+    border: 1px solid #525e75;
+    border-radius: 0 4vh 4vh 0;
+    margin: 0;
+    cursor: pointer;
+}
