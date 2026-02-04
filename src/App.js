@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { Categories } from './components/Categories/Categories';
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+import { createHashRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import { Books } from './components/Books/Books';
 import { Book } from './components/Book/Book';
 import { Cart } from './components/Cart/Cart';
@@ -23,7 +23,7 @@ function App() {
   .catch(e => console.error('Fetch error:', e));
   }, [])
 
-  const router = createBrowserRouter(
+  const router = createHashRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Categories booksData={booksData} />} />
@@ -33,10 +33,7 @@ function App() {
       <Route path="/order_registration" element={<OrderRegistration booksInCart={booksInCart} setOrderData={setOrderData} />} />
       <Route path="/complete_order" element={<CompleteOrder orderData={orderData} booksInCart={booksInCart} />} />
     </>
-  ),
-  {
-    basename: "/books_store",
-  }
+  )
 );
 
 
