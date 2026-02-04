@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/books_store/static/css/main.dfd21f10.css",
-    "main.js": "/books_store/static/js/main.8d89a816.js",
+    "main.js": "/books_store/static/js/main.df1d1070.js",
     "static/js/453.6c8739fd.chunk.js": "/books_store/static/js/453.6c8739fd.chunk.js",
     "static/media/BwSurco-Medium.ttf": "/books_store/static/media/BwSurco-Medium.d1ef17d04c03924b4a0a.ttf",
     "static/media/BwSurco-Book.ttf": "/books_store/static/media/BwSurco-Book.f9e051405e8ccef8df0d.ttf",
     "static/media/AKONY.ttf": "/books_store/static/media/AKONY.6da8a7db050c511cc1f8.ttf",
     "index.html": "/books_store/index.html",
     "main.dfd21f10.css.map": "/books_store/static/css/main.dfd21f10.css.map",
-    "main.8d89a816.js.map": "/books_store/static/js/main.8d89a816.js.map",
+    "main.df1d1070.js.map": "/books_store/static/js/main.df1d1070.js.map",
     "453.6c8739fd.chunk.js.map": "/books_store/static/js/453.6c8739fd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfd21f10.css",
-    "static/js/main.8d89a816.js"
+    "static/js/main.df1d1070.js"
   ]
 }
